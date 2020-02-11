@@ -3,23 +3,6 @@ import { StyleSheet, Text, View, Button, TextInput, ScrollView, FlatList } from 
 import GoalItem from './components/GoalItem';
 import GoalInput from './components/GoalInput';
 
-// class ErrorBoundary extends React.Component {
-//   state = { hasError: false }
-
-//   static getDerivedStateFromError (error) {
-//     return { hasError: true }
-//   }
-
-//   componentDidCatch (error, info) {
-//     logErrorToService(error, info.componentStack)
-//   }
-
-//   render () {
-//     return this.state.hasError
-//       ? <FallbackComponent />
-//       : this.props.children
-//   }
-// };
 
 function App() {
   const [courseGoals, setCourseGoals] = useState([]);
@@ -72,11 +55,5 @@ const styles = StyleSheet.create({
     padding: 50
   },
 });
-
-// const App = () => (
-//   <ErrorBoundary>
-//     <Children />
-//   </ErrorBoundary>
-// );
 
 export default App;
